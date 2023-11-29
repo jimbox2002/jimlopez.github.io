@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Institución Educativa</title>
+</head>
+<body>
+  <div id="registro">
+    <h2>Registro en el Curso</h2>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" required>
+    <button onclick="mostrarDatos()">Registrar</button>
+  </div>
+
+  <div id="datos-registro" style="display: none;">
+    <h2>Datos del Registro</h2>
+    <p id="mostrar-nombre"></p>
+    <p id="mostrar-apellido"></p>
+    <label for="usuario">Usuario:</label>
+    <input type="text" id="usuario" required>
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" id="contrasena" required>
+    <button onclick="accederCurso()">Acceder al Curso</button>
+  </div>
+
+  <div id="curso" style="display: none;">
+    <h2>Curso</h2>
+    <!-- Contenido del curso con hipervínculos, imágenes y videos -->
+    <p>Contenido del curso...</p>
+    <button onclick="realizarEvaluacion()">Realizar Evaluación</button>
+  </div>
+
+  <div id="evaluacion" style="display: none;">
+    <h2>Evaluación</h2>
+    <!-- Preguntas de evaluación con diferentes interfaces visuales -->
+    <!-- ... -->
+    <button onclick="calcularCalificacion()">Calcular Calificación</button>
+  </div>
+
+  <div id="resultado" style="display: none;">
+    <h2>Resultado</h2>
+    <p id="calificacion-final"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
